@@ -5,7 +5,7 @@ const path = require("path");
 const app = express();
 
 
-const PORT = 3003;
+
 
 const routeindex = require("./routes/conexiones");
 
@@ -24,6 +24,3 @@ app.use("/", routeindex);
 
 app.set("views", path.join(__dirname, "views"));
 
-app.listen(PORT, () => {
-   console.log(`servidor corriendo en el ${PORT}`);
-})
